@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 2 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -1364,9 +1364,9 @@ Text GLabel 10600 10150 2    50   Input ~ 0
 CPU_RST
 Text HLabel 14150 4600 0    50   Input ~ 0
 HPD_NOTIFY
-Text HLabel 14150 3400 0    50   Input ~ 0
+Text HLabel 14150 4400 0    50   Input ~ 0
 TMDS0_P
-Text HLabel 14150 3500 0    50   Input ~ 0
+Text HLabel 14150 4500 0    50   Input ~ 0
 TMDS0_N
 Text HLabel 14150 3600 0    50   Input ~ 0
 TMDS1_P
@@ -1376,13 +1376,13 @@ Text HLabel 14150 3800 0    50   Input ~ 0
 TMDS2_P
 Text HLabel 14150 3900 0    50   Input ~ 0
 TMDS2_N
-Text HLabel 14150 4000 0    50   Input ~ 0
+Text HLabel 14150 4800 0    50   Input ~ 0
 TMDS_CLK_P
-Text HLabel 14150 4100 0    50   Input ~ 0
+Text HLabel 14150 4900 0    50   Input ~ 0
 TMDS_CLK_N
-Text HLabel 14150 4400 0    50   BiDi ~ 0
+Text HLabel 12900 3900 0    50   BiDi ~ 0
 SCL
-Text HLabel 14150 4500 0    50   BiDi ~ 0
+Text HLabel 12900 4000 0    50   BiDi ~ 0
 SDA
 Text HLabel 14150 4700 0    50   Output ~ 0
 HPD_EN
@@ -1390,10 +1390,6 @@ Text HLabel 14150 5000 0    50   Output ~ 0
 DBG_TX
 Text HLabel 14150 5100 0    50   Input ~ 0
 DBG_RX
-Text GLabel 19350 6200 2    50   Input ~ 0
-DSI_HS_CLK_P
-Text GLabel 19350 6300 2    50   Input ~ 0
-DSI_HS_CLK_N
 $Comp
 L power:+1V8 #PWR0156
 U 1 1 5F7439A9
@@ -1416,10 +1412,6 @@ F 3 "" H 3450 1150 50  0001 C CNN
 	1    3450 1150
 	1    0    0    -1  
 $EndComp
-Text GLabel 19350 5900 2    50   Input ~ 0
-DSI_LP_CLK_N
-Text GLabel 19350 5800 2    50   Input ~ 0
-DSI_LP_CLK_P
 Text GLabel 4250 13650 0    50   Input ~ 0
 FPGA_TCK
 Text GLabel 4250 13750 0    50   Input ~ 0
@@ -1473,33 +1465,31 @@ Text GLabel 4750 13950 2    50   Input ~ 0
 IO0
 Text GLabel 4750 13850 2    50   Input ~ 0
 IO2
-Text GLabel 19350 3500 2    50   Input ~ 0
+Text GLabel 19350 5900 2    50   Input ~ 0
 DSI_LP_3_N
-Text GLabel 19350 3400 2    50   Input ~ 0
+Text GLabel 19350 5800 2    50   Input ~ 0
 DSI_LP_3_P
-Text GLabel 19350 3300 2    50   Input ~ 0
+Text GLabel 19350 6300 2    50   Input ~ 0
 DSI_HS_3_N
-Text GLabel 19350 3200 2    50   Input ~ 0
+Text GLabel 19350 6200 2    50   Input ~ 0
 DSI_HS_3_P
-Text GLabel 19350 3900 2    50   Input ~ 0
+Text GLabel 19350 6100 2    50   Input ~ 0
 DSI_LP_2_N
-Text GLabel 19350 3800 2    50   Input ~ 0
+Text GLabel 19350 6000 2    50   Input ~ 0
 DSI_LP_2_P
-Text GLabel 19350 3700 2    50   Input ~ 0
+Text GLabel 19350 5500 2    50   Input ~ 0
 DSI_HS_2_N
-Text GLabel 19350 3600 2    50   Input ~ 0
+Text GLabel 19350 5400 2    50   Input ~ 0
 DSI_HS_2_P
-Text GLabel 19350 4300 2    50   Input ~ 0
-DSI_LP_1_N
-Text GLabel 19350 4200 2    50   Input ~ 0
+Text GLabel 19350 3400 2    50   Input ~ 0
 DSI_LP_1_P
-Text GLabel 19350 4100 2    50   Input ~ 0
+Text GLabel 19350 3700 2    50   Input ~ 0
 DSI_HS_1_N
-Text GLabel 19350 4000 2    50   Input ~ 0
+Text GLabel 19350 3600 2    50   Input ~ 0
 DSI_HS_1_P
-Text GLabel 19350 4500 2    50   Input ~ 0
+Text GLabel 19350 2700 2    50   Input ~ 0
 DSI_HS_0_N
-Text GLabel 19350 4400 2    50   Input ~ 0
+Text GLabel 19350 2600 2    50   Input ~ 0
 DSI_HS_0_P
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J3
@@ -1878,17 +1868,17 @@ Wire Wire Line
 	19350 5400 18650 5400
 Wire Wire Line
 	19350 5500 18650 5500
-Text GLabel 19350 5500 2    50   Input ~ 0
+Text GLabel 19350 2900 2    50   Input ~ 0
 DSI_LP_0_N
-Text GLabel 19350 5400 2    50   Input ~ 0
+Text GLabel 19350 2800 2    50   Input ~ 0
 DSI_LP_0_P
 Text GLabel 19500 2500 2    50   Input ~ 0
 LCD_PWREN
-Text GLabel 19500 2400 2    50   Input ~ 0
+Text GLabel 19350 3200 2    50   Input ~ 0
 DSI_RESET_N
-Text GLabel 19500 2300 2    50   Input ~ 0
+Text GLabel 19350 3300 2    50   Input ~ 0
 DSI_GPIO1
-Text GLabel 19500 2200 2    50   Input ~ 0
+Text GLabel 19350 3100 2    50   Input ~ 0
 DSI_GPIO0
 Wire Wire Line
 	18650 2200 19500 2200
@@ -1898,6 +1888,24 @@ Wire Wire Line
 	18650 2400 19500 2400
 Wire Wire Line
 	18650 2500 19500 2500
+Text HLabel 12600 4900 0    50   Output ~ 0
+BL_DIM
+Text HLabel 12600 5000 0    50   Output ~ 0
+VID_RESET_N
+Wire Wire Line
+	19350 3000 18650 3000
+Wire Wire Line
+	19350 3100 18650 3100
+Text GLabel 19350 3500 2    50   Input ~ 0
+DSI_LP_1_N
+Text GLabel 19350 4500 2    50   Input ~ 0
+DSI_HS_CLK_N
+Text GLabel 19350 4400 2    50   Input ~ 0
+DSI_HS_CLK_P
+Text GLabel 19350 4200 2    50   Input ~ 0
+DSI_LP_CLK_P
+Text GLabel 19350 4300 2    50   Input ~ 0
+DSI_LP_CLK_N
 Wire Bus Line
 	8200 6250 8200 6550
 Wire Bus Line
@@ -1908,8 +1916,4 @@ Wire Bus Line
 	7900 5200 7900 7100
 Wire Bus Line
 	7900 2200 7900 4500
-Text HLabel 14150 4800 0    50   Output ~ 0
-BL_DIM
-Text HLabel 14150 4900 0    50   Output ~ 0
-VID_RESET_N
 $EndSCHEMATC

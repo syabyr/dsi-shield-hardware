@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -1147,61 +1147,12 @@ Wire Wire Line
 Connection ~ 2150 7450
 Wire Wire Line
 	2150 7450 2350 7450
-$Comp
-L dsi_shield:Res1 R13
-U 1 1 5F6EDEB1
-P 4500 6800
-F 0 "R13" H 4700 6750 50  0000 C CNN
-F 1 "0" H 4500 6750 60  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 4500 6390 60  0001 L CNN
-F 3 "" H 4500 6300 60  0001 L CNN
-F 4 "8-Jun-2000" H 4500 6210 60  0001 L CNN "Field4"
-F 5 "17-Jul-2002" H 4500 6120 60  0001 L CNN "Field5"
-F 6 "Re-released for DXP Platform." H 4500 6030 60  0001 L CNN "Field6"
-F 7 "AXIAL-0.3" H 4500 5940 60  0001 L CNN "Field7"
-F 8 "Altium Limited" H 4500 5850 60  0001 L CNN "Field8"
-F 9 "100" H 4600 6796 50  0001 C CNN "Field9"
-F 10 "Yes" H 4500 5670 60  0001 L CNN "Field10"
-F 11 "=Value" H 4500 5580 60  0001 L CNN "Field11"
-	1    4500 6800
-	1    0    0    -1  
-$EndComp
-$Comp
-L dsi_shield:Res1 R14
-U 1 1 5F6EE61A
-P 4500 7050
-F 0 "R14" H 4700 7000 50  0000 C CNN
-F 1 "0" H 4500 7000 60  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H 4500 6640 60  0001 L CNN
-F 3 "" H 4500 6550 60  0001 L CNN
-F 4 "8-Jun-2000" H 4500 6460 60  0001 L CNN "Field4"
-F 5 "17-Jul-2002" H 4500 6370 60  0001 L CNN "Field5"
-F 6 "Re-released for DXP Platform." H 4500 6280 60  0001 L CNN "Field6"
-F 7 "AXIAL-0.3" H 4500 6190 60  0001 L CNN "Field7"
-F 8 "Altium Limited" H 4500 6100 60  0001 L CNN "Field8"
-F 9 "100" H 4600 7046 50  0001 C CNN "Field9"
-F 10 "Yes" H 4500 5920 60  0001 L CNN "Field10"
-F 11 "=Value" H 4500 5830 60  0001 L CNN "Field11"
-	1    4500 7050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4800 7150 4900 7150
-Wire Wire Line
-	4900 7150 4900 6900
 Wire Wire Line
 	4900 6700 5200 6700
-Wire Wire Line
-	4800 6900 4900 6900
-Connection ~ 4900 6900
 Wire Wire Line
 	4900 6900 4900 6700
 Text GLabel 5200 6700 2    50   Input ~ 0
 V_DDR
-Wire Wire Line
-	4300 6900 4400 6900
-Wire Wire Line
-	4300 7150 4400 7150
 $Comp
 L power:+1V8 #PWR0131
 U 1 1 5F70AB48
@@ -1219,17 +1170,6 @@ Text Label 5050 5250 0    50   ~ 0
 CPU_RST
 Text GLabel 5400 5250 2    50   Input ~ 0
 CPU_RST
-$Comp
-L power:+2V5 #PWR0132
-U 1 1 5F817592
-P 4300 7150
-F 0 "#PWR0132" H 4300 7000 50  0001 C CNN
-F 1 "+2V5" H 4315 7323 50  0000 C CNN
-F 2 "" H 4300 7150 50  0001 C CNN
-F 3 "" H 4300 7150 50  0001 C CNN
-	1    4300 7150
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5F82836B
@@ -2066,4 +2006,6 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2500 57
 	1    2350 5750
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4300 6900 4900 6900
 $EndSCHEMATC
