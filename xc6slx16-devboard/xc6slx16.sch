@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 2 3
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -22,17 +22,6 @@ F 1 "XC6SLX16-FTG256" H 5200 1134 50  0000 C CNN
 F 2 "Package_BGA:Xilinx_FTG256" H 5200 4400 50  0001 C CNN
 F 3 "" H 5200 4400 50  0000 C CNN
 	1    5200 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L FPGA_Xilinx_Spartan6:XC6SLX16-FTG256 U1
-U 2 1 5F1C3ECB
-P 16650 4500
-F 0 "U1" H 16650 1325 50  0000 C CNN
-F 1 "XC6SLX16-FTG256" H 16650 1234 50  0000 C CNN
-F 2 "Package_BGA:Xilinx_FTG256" H 16650 4500 50  0001 C CNN
-F 3 "" H 16650 4500 50  0000 C CNN
-	2    16650 4500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -84,8 +73,6 @@ Text Label 7950 7100 0    50   ~ 0
 SDRAM_DQ[0..15]
 Wire Wire Line
 	19350 4800 18650 4800
-Wire Wire Line
-	19350 4900 18650 4900
 Wire Wire Line
 	18650 4600 19350 4600
 Wire Wire Line
@@ -453,7 +440,7 @@ Wire Wire Line
 Wire Wire Line
 	14250 2700 14650 2700
 Wire Wire Line
-	14300 5900 14650 5900
+	14150 5900 14650 5900
 Wire Wire Line
 	14250 2200 14650 2200
 Wire Wire Line
@@ -1371,81 +1358,41 @@ Wire Wire Line
 	18650 6400 19350 6400
 Wire Wire Line
 	18650 7500 19350 7500
-Wire Wire Line
-	18650 2300 18800 2300
 Text Label 11300 13800 0    50   ~ 0
 CLK_25MHZ
 Text GLabel 10600 10150 2    50   Input ~ 0
 CPU_RST
-Text HLabel 2700 2200 0    50   Input ~ 0
+Text HLabel 14150 4600 0    50   Input ~ 0
 HPD_NOTIFY
-Text HLabel 2700 2300 0    50   Input ~ 0
+Text HLabel 14150 3400 0    50   Input ~ 0
 TMDS0_P
-Text HLabel 2700 2400 0    50   Input ~ 0
+Text HLabel 14150 3500 0    50   Input ~ 0
 TMDS0_N
-Text Label 2750 2100 0    50   ~ 0
-BL_DIM
-Text Label 2750 2200 0    50   ~ 0
-HPD_NOTIFY
-Text Label 2750 2300 0    50   ~ 0
-TMDS0_P
-Text Label 2750 2400 0    50   ~ 0
-TMDS0_N
-Text Label 2750 2500 0    50   ~ 0
+Text HLabel 14150 3600 0    50   Input ~ 0
 TMDS1_P
-Text HLabel 2700 2500 0    50   Input ~ 0
-TMDS1_P
-Text HLabel 2700 2600 0    50   Input ~ 0
+Text HLabel 14150 3700 0    50   Input ~ 0
 TMDS1_N
-Text HLabel 2700 2700 0    50   Input ~ 0
+Text HLabel 14150 3800 0    50   Input ~ 0
 TMDS2_P
-Text Label 2750 2600 0    50   ~ 0
-TMDS1_N
-Text Label 2750 2700 0    50   ~ 0
-TMDS2_P
-Text Label 2750 2800 0    50   ~ 0
+Text HLabel 14150 3900 0    50   Input ~ 0
 TMDS2_N
-Text HLabel 2700 2800 0    50   Input ~ 0
-TMDS2_N
-Text Label 2750 2900 0    50   ~ 0
+Text HLabel 14150 4000 0    50   Input ~ 0
 TMDS_CLK_P
-Text HLabel 2700 2900 0    50   Input ~ 0
-TMDS_CLK_P
-Text Label 2750 3000 0    50   ~ 0
+Text HLabel 14150 4100 0    50   Input ~ 0
 TMDS_CLK_N
-Text HLabel 2700 3000 0    50   Input ~ 0
-TMDS_CLK_N
-Text HLabel 2700 3100 0    50   BiDi ~ 0
+Text HLabel 14150 4400 0    50   BiDi ~ 0
 SCL
-Text Label 2750 3100 0    50   ~ 0
-SCL
-Text Label 2750 3200 0    50   ~ 0
+Text HLabel 14150 4500 0    50   BiDi ~ 0
 SDA
-Text HLabel 2700 3200 0    50   BiDi ~ 0
-SDA
-Text Label 2750 3300 0    50   ~ 0
+Text HLabel 14150 4700 0    50   Output ~ 0
 HPD_EN
-Text HLabel 2700 3300 0    50   Output ~ 0
-HPD_EN
-Text GLabel 11650 -700 2    50   Input ~ 0
-DSI_GPIO0
-Text GLabel 11650 -600 2    50   Input ~ 0
-DSI_GPIO1
-Text GLabel 11650 -500 2    50   Input ~ 0
-DSI_RESET_N
-Text GLabel 11650 -400 2    50   Input ~ 0
-LCD_PWREN
-Text HLabel 2700 3500 0    50   Output ~ 0
+Text HLabel 14150 5000 0    50   Output ~ 0
 DBG_TX
-Text Label 2750 3500 0    50   ~ 0
-DBG_TX
-Text Label 2750 3600 0    50   ~ 0
+Text HLabel 14150 5100 0    50   Input ~ 0
 DBG_RX
-Text HLabel 2700 3600 0    50   Input ~ 0
-DBG_RX
-Text GLabel 15150 -2350 2    50   Input ~ 0
+Text GLabel 19350 6200 2    50   Input ~ 0
 DSI_HS_CLK_P
-Text GLabel 15150 -2250 2    50   Input ~ 0
+Text GLabel 19350 6300 2    50   Input ~ 0
 DSI_HS_CLK_N
 $Comp
 L power:+1V8 #PWR0156
@@ -1469,9 +1416,9 @@ F 3 "" H 3450 1150 50  0001 C CNN
 	1    3450 1150
 	1    0    0    -1  
 $EndComp
-Text GLabel 15150 -1650 2    50   Input ~ 0
+Text GLabel 19350 5900 2    50   Input ~ 0
 DSI_LP_CLK_N
-Text GLabel 15150 -1750 2    50   Input ~ 0
+Text GLabel 19350 5800 2    50   Input ~ 0
 DSI_LP_CLK_P
 Text GLabel 4250 13650 0    50   Input ~ 0
 FPGA_TCK
@@ -1526,37 +1473,33 @@ Text GLabel 4750 13950 2    50   Input ~ 0
 IO0
 Text GLabel 4750 13850 2    50   Input ~ 0
 IO2
-Text GLabel 15150 -1250 2    50   Input ~ 0
+Text GLabel 19350 3500 2    50   Input ~ 0
 DSI_LP_3_N
-Text GLabel 15150 -1350 2    50   Input ~ 0
+Text GLabel 19350 3400 2    50   Input ~ 0
 DSI_LP_3_P
-Text GLabel 15150 -1450 2    50   Input ~ 0
+Text GLabel 19350 3300 2    50   Input ~ 0
 DSI_HS_3_N
-Text GLabel 15150 -1550 2    50   Input ~ 0
+Text GLabel 19350 3200 2    50   Input ~ 0
 DSI_HS_3_P
-Text GLabel 15150 -2050 2    50   Input ~ 0
+Text GLabel 19350 3900 2    50   Input ~ 0
 DSI_LP_2_N
-Text GLabel 15150 -2150 2    50   Input ~ 0
+Text GLabel 19350 3800 2    50   Input ~ 0
 DSI_LP_2_P
-Text GLabel 15150 -1850 2    50   Input ~ 0
+Text GLabel 19350 3700 2    50   Input ~ 0
 DSI_HS_2_N
-Text GLabel 15150 -1950 2    50   Input ~ 0
+Text GLabel 19350 3600 2    50   Input ~ 0
 DSI_HS_2_P
-Text GLabel 15150 -2450 2    50   Input ~ 0
+Text GLabel 19350 4300 2    50   Input ~ 0
 DSI_LP_1_N
-Text GLabel 15150 -2550 2    50   Input ~ 0
+Text GLabel 19350 4200 2    50   Input ~ 0
 DSI_LP_1_P
-Text GLabel 12800 -400 2    50   Input ~ 0
+Text GLabel 19350 4100 2    50   Input ~ 0
 DSI_HS_1_N
-Text GLabel 12800 -500 2    50   Input ~ 0
+Text GLabel 19350 4000 2    50   Input ~ 0
 DSI_HS_1_P
-Text GLabel 12800 -600 2    50   Input ~ 0
-DSI_LP_0_N
-Text GLabel 12800 -700 2    50   Input ~ 0
-DSI_LP_0_P
-Text GLabel 12800 -800 2    50   Input ~ 0
+Text GLabel 19350 4500 2    50   Input ~ 0
 DSI_HS_0_N
-Text GLabel 12800 -900 2    50   Input ~ 0
+Text GLabel 19350 4400 2    50   Input ~ 0
 DSI_HS_0_P
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J3
@@ -1597,8 +1540,6 @@ F 3 "" H 16750 10850 50  0001 C CNN
 	1    16750 10850
 	1    0    0    -1  
 $EndComp
-Text GLabel 15150 -3150 2    50   Input ~ 0
-CLK_25MHZ
 Text Label 7250 2300 0    50   ~ 0
 SDRAM_A13
 Text Label 7250 2600 0    50   ~ 0
@@ -1860,6 +1801,103 @@ Wire Wire Line
 	9350 11100 9500 11100
 Wire Wire Line
 	9350 11000 9500 11000
+Text HLabel 20600 4400 2    50   Input ~ 0
+CLK_25MHZ
+$Comp
+L Device:R_US R3
+U 1 1 5FCDDF0E
+P 20150 5100
+F 0 "R3" H 20218 5146 50  0000 L CNN
+F 1 "220" H 20218 5055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 20190 5090 50  0001 C CNN
+F 3 "~" H 20150 5100 50  0001 C CNN
+	1    20150 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R2
+U 1 1 5FCDE4ED
+P 20150 4650
+F 0 "R2" H 20218 4696 50  0000 L CNN
+F 1 "180" H 20218 4605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 20190 4640 50  0001 C CNN
+F 3 "~" H 20150 4650 50  0001 C CNN
+	1    20150 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5FCE0405
+P 20150 5300
+F 0 "#PWR0103" H 20150 5050 50  0001 C CNN
+F 1 "GND" H 20155 5127 50  0000 C CNN
+F 2 "" H 20150 5300 50  0001 C CNN
+F 3 "" H 20150 5300 50  0001 C CNN
+	1    20150 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20150 5300 20150 5250
+Wire Wire Line
+	20150 4950 20150 4900
+Wire Wire Line
+	20150 4500 20150 4400
+Wire Wire Line
+	20150 4400 20600 4400
+$Comp
+L FPGA_Xilinx_Spartan6:XC6SLX16-FTG256 U1
+U 2 1 5F1C3ECB
+P 16650 4500
+F 0 "U1" H 16650 1325 50  0000 C CNN
+F 1 "XC6SLX16-FTG256" H 16650 1234 50  0000 C CNN
+F 2 "Package_BGA:Xilinx_FTG256" H 16650 4500 50  0001 C CNN
+F 3 "" H 16650 4500 50  0000 C CNN
+	2    16650 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	18650 4900 20150 4900
+Connection ~ 20150 4900
+Wire Wire Line
+	20150 4900 20150 4800
+Text Label 14250 5500 0    50   ~ 0
+DBG_O3
+Text Label 14250 5600 0    50   ~ 0
+DBG_O2
+Text Label 14250 5700 0    50   ~ 0
+DBG_O1
+Text Label 14250 5800 0    50   ~ 0
+DBG_O0
+Wire Wire Line
+	19350 6300 18650 6300
+Wire Wire Line
+	19350 6800 18650 6800
+Wire Wire Line
+	19350 4100 18650 4100
+Wire Wire Line
+	19350 5400 18650 5400
+Wire Wire Line
+	19350 5500 18650 5500
+Text GLabel 19350 5500 2    50   Input ~ 0
+DSI_LP_0_N
+Text GLabel 19350 5400 2    50   Input ~ 0
+DSI_LP_0_P
+Text GLabel 19500 2500 2    50   Input ~ 0
+LCD_PWREN
+Text GLabel 19500 2400 2    50   Input ~ 0
+DSI_RESET_N
+Text GLabel 19500 2300 2    50   Input ~ 0
+DSI_GPIO1
+Text GLabel 19500 2200 2    50   Input ~ 0
+DSI_GPIO0
+Wire Wire Line
+	18650 2200 19500 2200
+Wire Wire Line
+	18650 2300 19500 2300
+Wire Wire Line
+	18650 2400 19500 2400
+Wire Wire Line
+	18650 2500 19500 2500
 Wire Bus Line
 	8200 6250 8200 6550
 Wire Bus Line
@@ -1870,4 +1908,8 @@ Wire Bus Line
 	7900 5200 7900 7100
 Wire Bus Line
 	7900 2200 7900 4500
+Text HLabel 14150 4800 0    50   Output ~ 0
+BL_DIM
+Text HLabel 14150 4900 0    50   Output ~ 0
+VID_RESET_N
 $EndSCHEMATC

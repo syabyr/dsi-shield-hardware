@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -75,4 +75,22 @@ Wire Wire Line
 	6350 3450 6750 3450
 Wire Wire Line
 	6350 3550 6750 3550
+$Sheet
+S 3900 2350 800  950 
+U 6028E9E6
+F0 "Sheet6028E9E5" 50
+F1 "power.sch" 50
+$EndSheet
+$Sheet
+S 3600 3950 900  1150
+U 6028F129
+F0 "Sheet6028F128" 50
+F1 "hdmi-in.sch" 50
+$EndSheet
+$Sheet
+S 3150 5800 1300 850 
+U 6028F35E
+F0 "Sheet6028F35D" 50
+F1 "dsi-out.sch" 50
+$EndSheet
 $EndSCHEMATC
