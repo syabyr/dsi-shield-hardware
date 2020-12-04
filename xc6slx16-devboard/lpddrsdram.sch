@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 2 7
 Title ""
 Date ""
 Rev ""
@@ -214,8 +214,6 @@ SDRAM_DQS1
 Text Label 7150 3650 0    50   ~ 0
 SDRAM_DQS[0..1]
 Wire Wire Line
-	4200 2400 4900 2400
-Wire Wire Line
 	4200 2600 4900 2600
 Wire Wire Line
 	4200 2700 4900 2700
@@ -224,7 +222,7 @@ Wire Wire Line
 Wire Bus Line
 	3600 2900 4300 2900
 Wire Wire Line
-	4200 2300 4900 2300
+	3100 2300 3300 2300
 $Comp
 L mybays:K4X1G163PE U2
 U 1 1 5F1A3D75
@@ -383,9 +381,9 @@ Text HLabel 4200 2600 0    50   Input ~ 0
 SDRAM_RAS_N
 Text HLabel 4200 2700 0    50   Input ~ 0
 SDRAM_CAS_N
-Text HLabel 4200 2300 0    50   Input ~ 0
+Text HLabel 3100 2300 0    50   Input ~ 0
 SDRAM_CKE
-Text HLabel 4200 2400 0    50   Input ~ 0
+Text HLabel 3100 2400 0    50   Input ~ 0
 SDRAM_CS_N
 Text Label 4300 2100 0    50   ~ 0
 SDRAM_CLK_P
@@ -407,7 +405,7 @@ U 1 1 6006E9EF
 P 1450 5950
 F 0 "C20" H 1300 5850 50  0000 L CNN
 F 1 "1u" H 1300 6050 60  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 1450 5480 60  0001 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 1450 5480 60  0001 L CNN
 F 3 "" H 1450 5390 60  0001 L CNN
 F 4 "8-Jun-2000" H 1450 5300 60  0001 L CNN "Field4"
 F 5 "17-Jul-2002" H 1450 5210 60  0001 L CNN "Field5"
@@ -708,6 +706,62 @@ F 11 "=Value" H 2750 4670 60  0001 L CNN "Field11"
 	1    2750 5950
 	-1   0    0    1   
 $EndComp
+$Comp
+L Device:R_US R14
+U 1 1 5FD61AF2
+P 3500 2050
+F 0 "R14" V 3450 2150 50  0000 C CNN
+F 1 "100" V 3450 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3540 2040 50  0001 C CNN
+F 3 "~" H 3500 2050 50  0001 C CNN
+	1    3500 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 5FD6E2E1
+P 3400 1800
+F 0 "#PWR0132" H 3400 1550 50  0001 C CNN
+F 1 "GND" H 3405 1627 50  0000 C CNN
+F 2 "" H 3400 1800 50  0001 C CNN
+F 3 "" H 3400 1800 50  0001 C CNN
+	1    3400 1800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 2400 3500 2400
+$Comp
+L Device:R_US R13
+U 1 1 5FD8B256
+P 3300 2050
+F 0 "R13" V 3250 2150 50  0000 C CNN
+F 1 "4.7k" V 3250 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3340 2040 50  0001 C CNN
+F 3 "~" H 3300 2050 50  0001 C CNN
+	1    3300 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 2200 3300 2300
+Connection ~ 3300 2300
+Wire Wire Line
+	3300 2300 4900 2300
+Wire Wire Line
+	3500 2200 3500 2400
+Connection ~ 3500 2400
+Wire Wire Line
+	3500 2400 4900 2400
+Wire Wire Line
+	3300 1900 3300 1850
+Wire Wire Line
+	3300 1850 3400 1850
+Wire Wire Line
+	3500 1850 3500 1900
+Wire Wire Line
+	3400 1800 3400 1850
+Connection ~ 3400 1850
+Wire Wire Line
+	3400 1850 3500 1850
 Wire Bus Line
 	7150 4100 7150 4350
 Wire Bus Line
