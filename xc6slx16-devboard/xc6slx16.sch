@@ -1365,10 +1365,6 @@ Text HLabel 14150 5100 0    50   BiDi ~ 0
 SDA
 Text HLabel 14150 4700 0    50   Output ~ 0
 HPD_EN
-Text HLabel 2700 3300 0    50   Output ~ 0
-DBG_TX
-Text HLabel 2700 3400 0    50   Input ~ 0
-DBG_RX
 $Comp
 L power:+1V8 #PWR0156
 U 1 1 5F7439A9
@@ -1833,8 +1829,6 @@ Text GLabel 19350 2900 2    50   Input ~ 0
 DSI_LP_0_N
 Text GLabel 19350 2800 2    50   Input ~ 0
 DSI_LP_0_P
-Text GLabel 19500 2500 2    50   Input ~ 0
-LCD_PWREN
 Text GLabel 19350 3200 2    50   Input ~ 0
 DSI_RESET_N
 Text GLabel 19350 3300 2    50   Input ~ 0
@@ -1849,9 +1843,9 @@ Wire Wire Line
 	18650 2400 19500 2400
 Wire Wire Line
 	18650 2500 19500 2500
-Text HLabel 2700 3700 0    50   Output ~ 0
+Text HLabel 2700 2200 0    50   Output ~ 0
 BL_DIM
-Text HLabel 2700 3800 0    50   Output ~ 0
+Text HLabel 14150 5500 0    50   Output ~ 0
 LCD_PWREN
 Wire Wire Line
 	19350 3000 18650 3000
@@ -1957,14 +1951,34 @@ F 3 "" H 4500 10800 50  0001 C CNN
 	1    4500 10800
 	1    0    0    -1  
 $EndComp
-Text GLabel 2700 2700 0    50   Input ~ 0
+Text GLabel 2700 2600 0    50   Input ~ 0
 DBG_O3
-Text GLabel 2700 2800 0    50   Input ~ 0
+Text GLabel 2700 2500 0    50   Input ~ 0
 DBG_O2
-Text GLabel 2700 2900 0    50   Input ~ 0
+Text GLabel 2700 2400 0    50   Input ~ 0
 DBG_O1
-Text GLabel 2700 3000 0    50   Input ~ 0
+Text GLabel 2700 2300 0    50   Input ~ 0
 DBG_O0
+Text Label 20200 4400 0    50   ~ 0
+CLK_25MHZ
+Text HLabel 8150 2050 2    50   UnSpc ~ 0
+DDR_VREF
+Text GLabel 2700 3300 0    50   Input ~ 0
+DBG_TX
+Text GLabel 2700 3400 0    50   Input ~ 0
+DBG_RX
+Text GLabel 2700 2700 0    50   Input ~ 0
+DBG_O4
+Text GLabel 2700 2800 0    50   Input ~ 0
+DBG_O5
+Text GLabel 2700 2900 0    50   Input ~ 0
+DBG_O6
+Text GLabel 2700 3000 0    50   Input ~ 0
+DBG_O7
+Text GLabel 2700 3100 0    50   Input ~ 0
+DBG_O8
+Text GLabel 2700 3200 0    50   Input ~ 0
+DBG_O9
 Wire Bus Line
 	8050 5000 8050 5250
 Wire Bus Line
@@ -1975,8 +1989,4 @@ Wire Bus Line
 	7900 5200 7900 7100
 Wire Bus Line
 	7900 2200 7900 4500
-Text Label 20200 4400 0    50   ~ 0
-CLK_25MHZ
-Text HLabel 8150 2050 2    50   UnSpc ~ 0
-DDR_VREF
 $EndSCHEMATC
