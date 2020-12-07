@@ -769,7 +769,7 @@ Wire Bus Line
 Wire Bus Line
 	7150 3650 7150 3800
 Wire Bus Line
-	7150 1900 7150 3500
-Wire Bus Line
 	4300 2900 4300 4200
+Wire Bus Line
+	7150 1900 7150 3500
 $EndSCHEMATC
