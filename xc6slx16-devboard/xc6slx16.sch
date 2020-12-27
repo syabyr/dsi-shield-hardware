@@ -1355,9 +1355,9 @@ Text HLabel 14150 3800 0    50   Input ~ 0
 TMDS2_P
 Text HLabel 14150 3900 0    50   Input ~ 0
 TMDS2_N
-Text HLabel 14150 4800 0    50   Input ~ 0
+Text HLabel 14150 4200 0    50   Input ~ 0
 TMDS_CLK_P
-Text HLabel 14150 4900 0    50   Input ~ 0
+Text HLabel 14150 4300 0    50   Input ~ 0
 TMDS_CLK_N
 Text HLabel 14150 5000 0    50   BiDi ~ 0
 SCL
@@ -1979,6 +1979,48 @@ Text GLabel 2700 3100 0    50   Input ~ 0
 DBG_O8
 Text GLabel 2700 3200 0    50   Input ~ 0
 DBG_O9
+$Comp
+L dsi_shield:M25P80-VMN6P IC6
+U 1 1 5FFBB5E2
+P 10450 10600
+F 0 "IC6" H 10800 10765 50  0000 C CNN
+F 1 "M25P80-VMN6P" H 10800 10674 50  0000 C CNN
+F 2 "Package_SO:SOP-8_5.28x5.23mm_P1.27mm" H 10450 9720 60  0001 L CNN
+F 3 "\\cern.ch\\dfs\\Applications\\Altium\\Datasheets\\M25P80-VMN6P.pdf" H 10450 9630 60  0001 L CNN
+F 4 "M25P80-VMN6P" H 10450 9540 60  0001 L CNN "字段4"
+F 5 "Standard" H 10450 9450 60  0001 L CNN "字段5"
+F 6 "Standard" H 10450 9360 60  0001 L CNN "字段6"
+F 7 "M25P80-VMN6P" H 10450 9270 60  0001 L CNN "字段7"
+F 8 "SOIC 8, Pitch 1.27mm - Body 4x5mm, IPC Medium Density" H 10450 9180 60  0001 L CNN "字段8"
+F 9 "8 Mbit, 2.7V to 3.6V Serial Flash Embedded Memory" H 10450 9090 60  0001 L CNN "字段9"
+F 10 "NUMONYX" H 10450 9000 60  0001 L CNN "字段10"
+F 11 "M25P80-VMN6P" H 10450 8910 60  0001 L CNN "字段11"
+F 12 "8" H 10450 8820 60  0001 L CNN "字段12"
+F 13 "SOIC8" H 10450 8730 60  0001 L CNN "字段13"
+F 14 "Yes" H 10450 8640 60  0001 L CNN "字段14"
+F 15 "No" H 10450 8550 60  0001 L CNN "字段15"
+F 16 "Yes" H 10450 8460 60  0001 L CNN "字段16"
+F 17 "1.75mm" H 10450 8370 60  0001 L CNN "字段17"
+F 18 "CERN DEM JLC" H 10450 8280 60  0001 L CNN "字段18"
+F 19 "10/5/2011" H 10450 8190 60  0001 L CNN "字段19"
+F 20 "10/5/2011" H 10450 8100 60  0001 L CNN "字段20"
+F 21 "Logic" H 10450 8010 60  0001 L CNN "字段21"
+F 22 "Yes" H 10450 7920 60  0001 L CNN "字段22"
+	1    10450 10600
+	1    0    0    -1  
+$EndComp
+Connection ~ 10250 10900
+Connection ~ 11350 10700
+Connection ~ 10250 11000
+Connection ~ 11350 11100
+Connection ~ 10250 10700
+Connection ~ 10250 10800
+Connection ~ 10250 11100
+Connection ~ 11350 11000
+Text GLabel 2700 3500 0    50   Input ~ 0
+DBG_SCL
+Text GLabel 2700 3600 0    50   Input ~ 0
+DBG_SDA
 Wire Bus Line
 	8050 5000 8050 5250
 Wire Bus Line

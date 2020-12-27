@@ -16,21 +16,21 @@ $EndDescr
 Text GLabel 5300 2700 0    50   Input ~ 0
 FPGA_TCK
 Text GLabel 5300 2500 0    50   Input ~ 0
-FPGA_TMS
-Text GLabel 5300 2600 0    50   Input ~ 0
 FPGA_TDO
-Text GLabel 5300 2400 0    50   Input ~ 0
+Text GLabel 5300 2600 0    50   Input ~ 0
 FPGA_TDI
+Text GLabel 5300 2400 0    50   Input ~ 0
+FPGA_TMS
 $Comp
 L power:+3V3 #PWR0205
 U 1 1 5FD347F8
-P 6000 2300
-F 0 "#PWR0205" H 6000 2150 50  0001 C CNN
-F 1 "+3V3" V 6015 2428 50  0000 L CNN
-F 2 "" H 6000 2300 50  0001 C CNN
-F 3 "" H 6000 2300 50  0001 C CNN
-	1    6000 2300
-	0    1    1    0   
+P 5300 2300
+F 0 "#PWR0205" H 5300 2150 50  0001 C CNN
+F 1 "+3V3" V 5315 2428 50  0000 L CNN
+F 2 "" H 5300 2300 50  0001 C CNN
+F 3 "" H 5300 2300 50  0001 C CNN
+	1    5300 2300
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3V3 #PWR0204
@@ -57,13 +57,13 @@ $EndComp
 $Comp
 L power:+5V #PWR0202
 U 1 1 5FD32FC2
-P 5300 2300
-F 0 "#PWR0202" H 5300 2150 50  0001 C CNN
-F 1 "+5V" V 5315 2428 50  0000 L CNN
-F 2 "" H 5300 2300 50  0001 C CNN
-F 3 "" H 5300 2300 50  0001 C CNN
-	1    5300 2300
-	0    -1   -1   0   
+P 6000 2300
+F 0 "#PWR0202" H 6000 2150 50  0001 C CNN
+F 1 "+5V" V 6015 2428 50  0000 L CNN
+F 2 "" H 6000 2300 50  0001 C CNN
+F 3 "" H 6000 2300 50  0001 C CNN
+	1    6000 2300
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5650 3750 6000 3750
@@ -110,9 +110,9 @@ F 3 "" H 5650 1850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 5300 2900 0    50   Input ~ 0
-SDA
+DBG_SDA
 Text GLabel 5300 2800 0    50   Input ~ 0
-SCL
+DBG_SCL
 Wire Wire Line
 	6000 3600 5900 3600
 Wire Wire Line
