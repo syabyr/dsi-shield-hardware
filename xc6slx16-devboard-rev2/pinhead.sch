@@ -1,0 +1,255 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 5300 2700 0    50   Input ~ 0
+FPGA_TCK
+Text GLabel 5300 2500 0    50   Input ~ 0
+FPGA_TDO
+Text GLabel 5300 2600 0    50   Input ~ 0
+FPGA_TDI
+Text GLabel 5300 2400 0    50   Input ~ 0
+FPGA_TMS
+$Comp
+L power:+3V3 #PWR0205
+U 1 1 5FD347F8
+P 5300 2300
+F 0 "#PWR0205" H 5300 2150 50  0001 C CNN
+F 1 "+3V3" V 5315 2428 50  0000 L CNN
+F 2 "" H 5300 2300 50  0001 C CNN
+F 3 "" H 5300 2300 50  0001 C CNN
+	1    5300 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0204
+U 1 1 5FD34786
+P 6000 3500
+F 0 "#PWR0204" H 6000 3350 50  0001 C CNN
+F 1 "+3V3" V 6015 3628 50  0000 L CNN
+F 2 "" H 6000 3500 50  0001 C CNN
+F 3 "" H 6000 3500 50  0001 C CNN
+	1    6000 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR0203
+U 1 1 5FD33BDE
+P 5300 3500
+F 0 "#PWR0203" H 5300 3350 50  0001 C CNN
+F 1 "+5V" V 5315 3628 50  0000 L CNN
+F 2 "" H 5300 3500 50  0001 C CNN
+F 3 "" H 5300 3500 50  0001 C CNN
+	1    5300 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0202
+U 1 1 5FD32FC2
+P 6000 2300
+F 0 "#PWR0202" H 6000 2150 50  0001 C CNN
+F 1 "+5V" V 6015 2428 50  0000 L CNN
+F 2 "" H 6000 2300 50  0001 C CNN
+F 3 "" H 6000 2300 50  0001 C CNN
+	1    6000 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 3750 6000 3750
+Connection ~ 5650 3750
+Wire Wire Line
+	5650 3800 5650 3750
+Wire Wire Line
+	6000 3750 6000 3600
+Wire Wire Line
+	5300 3750 5650 3750
+Wire Wire Line
+	5300 3600 5300 3750
+Connection ~ 5650 1950
+Wire Wire Line
+	6000 1950 6000 2200
+Wire Wire Line
+	5650 1950 6000 1950
+Wire Wire Line
+	5650 1950 5650 1850
+Wire Wire Line
+	5300 1950 5650 1950
+Wire Wire Line
+	5300 2200 5300 1950
+$Comp
+L power:GND #PWR0201
+U 1 1 5FD2F952
+P 5650 3800
+F 0 "#PWR0201" H 5650 3550 50  0001 C CNN
+F 1 "GND" H 5655 3627 50  0000 C CNN
+F 2 "" H 5650 3800 50  0001 C CNN
+F 3 "" H 5650 3800 50  0001 C CNN
+	1    5650 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0200
+U 1 1 5FD2F0D2
+P 5650 1850
+F 0 "#PWR0200" H 5650 1600 50  0001 C CNN
+F 1 "GND" H 5655 1677 50  0000 C CNN
+F 2 "" H 5650 1850 50  0001 C CNN
+F 3 "" H 5650 1850 50  0001 C CNN
+	1    5650 1850
+	-1   0    0    1   
+$EndComp
+Text GLabel 5300 2900 0    50   Input ~ 0
+DBG_SDA
+Text GLabel 5300 2800 0    50   Input ~ 0
+DBG_SCL
+Wire Wire Line
+	6000 3600 5900 3600
+Wire Wire Line
+	6000 3500 5900 3500
+Wire Wire Line
+	6000 3400 5900 3400
+Wire Wire Line
+	6000 3300 5900 3300
+Wire Wire Line
+	6000 3200 5900 3200
+Wire Wire Line
+	6000 3100 5900 3100
+Wire Wire Line
+	6000 3000 5900 3000
+Wire Wire Line
+	6000 2900 5900 2900
+Wire Wire Line
+	6000 2800 5900 2800
+Wire Wire Line
+	6000 2700 5900 2700
+Wire Wire Line
+	6000 2600 5900 2600
+Wire Wire Line
+	6000 2500 5900 2500
+Wire Wire Line
+	6000 2400 5900 2400
+Wire Wire Line
+	6000 2300 5900 2300
+Wire Wire Line
+	6000 2200 5900 2200
+Wire Wire Line
+	5300 3600 5400 3600
+Wire Wire Line
+	5300 3500 5400 3500
+Wire Wire Line
+	5300 3400 5400 3400
+Wire Wire Line
+	5300 3300 5400 3300
+Wire Wire Line
+	5300 3100 5400 3100
+Wire Wire Line
+	5300 3000 5400 3000
+Wire Wire Line
+	5300 2900 5400 2900
+Wire Wire Line
+	5300 2800 5400 2800
+Wire Wire Line
+	5300 2700 5400 2700
+Wire Wire Line
+	5300 2600 5400 2600
+Wire Wire Line
+	5300 2500 5400 2500
+Wire Wire Line
+	5300 2400 5400 2400
+Wire Wire Line
+	5300 2300 5400 2300
+Wire Wire Line
+	5300 2200 5400 2200
+Text GLabel 5300 3000 0    50   Input ~ 0
+DBG_TX
+Text GLabel 5300 3100 0    50   Input ~ 0
+DBG_RX
+$Comp
+L Connector_Generic:Conn_02x15_Odd_Even J4
+U 1 1 5FD691AA
+P 5600 2900
+F 0 "J4" H 5650 3817 50  0000 C CNN
+F 1 "Conn_02x15_Odd_Even" H 5650 3726 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x15_P2.54mm_Vertical" H 5600 2900 50  0001 C CNN
+F 3 "~" H 5600 2900 50  0001 C CNN
+	1    5600 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 6000 2400 2    50   Input ~ 0
+DBG_O0
+Text GLabel 6000 2500 2    50   Input ~ 0
+DBG_O1
+Text GLabel 6000 2600 2    50   Input ~ 0
+DBG_O2
+Text GLabel 6000 2700 2    50   Input ~ 0
+DBG_O3
+Text GLabel 6000 2800 2    50   Input ~ 0
+DBG_O4
+Text GLabel 6000 2900 2    50   Input ~ 0
+DBG_O5
+Text GLabel 6000 3000 2    50   Input ~ 0
+DBG_O6
+Text GLabel 6000 3100 2    50   Input ~ 0
+DBG_O7
+$Comp
+L power:+2V5 #PWR0213
+U 1 1 5FF13664
+P 5300 3400
+F 0 "#PWR0213" H 5300 3250 50  0001 C CNN
+F 1 "+2V5" V 5315 3528 50  0000 L CNN
+F 2 "" H 5300 3400 50  0001 C CNN
+F 3 "" H 5300 3400 50  0001 C CNN
+	1    5300 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+1V8 #PWR0214
+U 1 1 5FF150DA
+P 6000 3400
+F 0 "#PWR0214" H 6000 3250 50  0001 C CNN
+F 1 "+1V8" V 6015 3528 50  0000 L CNN
+F 2 "" H 6000 3400 50  0001 C CNN
+F 3 "" H 6000 3400 50  0001 C CNN
+	1    6000 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+1V2 #PWR0215
+U 1 1 5FF171A1
+P 5300 3300
+F 0 "#PWR0215" H 5300 3150 50  0001 C CNN
+F 1 "+1V2" V 5315 3428 50  0000 L CNN
+F 2 "" H 5300 3300 50  0001 C CNN
+F 3 "" H 5300 3300 50  0001 C CNN
+	1    5300 3300
+	0    -1   -1   0   
+$EndComp
+Text GLabel 6000 3200 2    50   Input ~ 0
+DBG_O8
+Text GLabel 6000 3300 2    50   Input ~ 0
+DBG_O9
+$Comp
+L power:GND #PWR0216
+U 1 1 5FF1A169
+P 4900 3200
+F 0 "#PWR0216" H 4900 2950 50  0001 C CNN
+F 1 "GND" H 4905 3027 50  0000 C CNN
+F 2 "" H 4900 3200 50  0001 C CNN
+F 3 "" H 4900 3200 50  0001 C CNN
+	1    4900 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4900 3200 5400 3200
+$EndSCHEMATC
